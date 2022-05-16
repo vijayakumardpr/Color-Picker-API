@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="icon" href="img/food.jpg" /> -->
+    <script src="script.js" defer></script>
+
+    <title>Color Picker API</title>
+  </head>
+
+  <body>
+    <form action="#">
+      <input type="color" id="colors" name="color" value="#e66465" />
+      <select name="mode-color" id="mode">
+        <option value="monochrome">monochrome</option>
+        <option value="monochrome-dark">monochrome-dark</option>
+        <option value="monochrome-light">monochrome-light</option>
+        <option value="analogic">analogic</option>
+        <option value="complement">complement</option>
+        <option value="analogic-complement">analogic-complement</option>
+        <option value="triad">triad</option>
+        <option value="quad">quad</option>
+      </select>
+      <button id="btn-color">Get color scheme</button>
+    </form>
+    <div class="colors-container">
+      <div style="background-color: #f55a5a"></div>
+      <div style="background-color: #2b283a"></div>
+      <div style="background-color: #fbf3ab"></div>
+      <div style="background-color: #aad1b6"></div>
+      <div style="background-color: #a626d3"></div>
+    </div>
+    <div class="clipboard">
+      <input type="text" class="color" value="#f55a5a"></input>
+      <input type="text" class="color" value="#2b283a"></input>
+      <input type="text" class="color" value="#fbf3ab"></input>
+      <input type="text" class="color" value="#aad1b6"></input>
+      <input type="text" class="color" value="#a626d3"></input>
+    </div>
+    
+  </body>
+</html>
